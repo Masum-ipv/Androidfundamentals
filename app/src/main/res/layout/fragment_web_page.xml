@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_wide"
+    tools:context=".fragment.WebPageFragment">
+
+    <TextView
+        android:id="@+id/enter_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter URL:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/http_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_wide"
+        android:background="@null"
+        app:layout_constraintBaseline_toBaselineOf="@id/url"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_url" />
+
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="www.example.com"
+        android:inputType="textUri"
+        app:layout_constraintStart_toEndOf="@id/http_spinner"
+        app:layout_constraintTop_toBottomOf="@id/enter_url" />
+
+    <Button
+        android:id="@+id/source_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_wide"
+        android:backgroundTint="@color/teal_200"
+        android:text="GET PAGE SOURCE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/url" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_wide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/source_btn">
+
+        <TextView
+            android:id="@+id/page_source"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_stroke"
+            android:padding="@dimen/text_margin"
+            android:text="Page source will appear here"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

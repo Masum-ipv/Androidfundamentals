@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!--    Selection will remain selected-->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/count_layout"
+            android:icon="@drawable/ic_counter"
+            android:title="Counter" />
+
+        <item
+            android:id="@+id/text_layout"
+            android:icon="@drawable/ic_text"
+            android:title="Paragraph" />
+
+        <item
+            android:id="@+id/two_activities"
+            android:icon="@drawable/ic_text"
+            android:title="Two Activities" />
+
+        <item
+            android:id="@+id/images"
+            android:icon="@drawable/ic_image"
+            android:title="Clickable Images" />
+        <item
+            android:id="@+id/dial_phone"
+            android:icon="@drawable/ic_baseline_local_phone_24"
+            android:title="Dial Phone" />
+        <item
+            android:id="@+id/checkbox_menu"
+            android:icon="@drawable/ic_baseline_check_box_24"
+            android:title="Check Boxes" />
+        <item
+            android:id="@+id/dialog"
+            android:icon="@drawable/ic_baseline_add_alert_24"
+            android:title="Dialog" />
+        <item
+            android:id="@+id/tab_experiment"
+            android:icon="@drawable/ic_baseline_swap_horiz_24"
+            android:title="Tab Experiment" />
+    </group>
+
+    <item android:title="Learn More">
+        <menu>
+            <item
+                android:id="@+id/recyclerview"
+                android:icon="@drawable/ic_baseline_view_list_24"
+                android:title="RecyclerView" />
+            <item
+                android:id="@+id/score"
+                android:icon="@drawable/ic_counter"
+                android:title="Score Keeper" />
+            <item
+                android:id="@+id/battery"
+                android:icon="@drawable/ic_battery_full"
+                android:title="Battery Level" />
+            <item
+                android:id="@+id/material"
+                android:icon="@drawable/ic_image"
+                android:title="Sports" />
+            <item
+                android:id="@+id/async_task"
+                android:icon="@drawable/ic_image"
+                android:title="Async Task" />
+            <item
+                android:id="@+id/who_wrote_it"
+                android:icon="@drawable/ic_image"
+                android:title="Who Wrote It" />
+            <item
+                android:id="@+id/web_page"
+                android:icon="@drawable/ic_image"
+                android:title="Web Page Source" />
+            <item
+                android:id="@+id/power_receiver"
+                android:icon="@drawable/ic_image"
+                android:title="Power Receiver" />
+            <item
+                android:id="@+id/notify_me"
+                android:icon="@drawable/ic_image"
+                android:title="Notify Me" />
+            <item
+                android:id="@+id/stand_up"
+                android:icon="@drawable/ic_image"
+                android:title="Stand Up" />
+            <item
+                android:id="@+id/notification_scheduler"
+                android:icon="@drawable/ic_image"
+                android:title="Notification Scheduler" />
+            <item
+                android:id="@+id/shared_pref"
+                android:icon="@drawable/ic_image"
+                android:title="Shared Preferences" />
+            <item
+                android:id="@+id/app_settings"
+                android:icon="@drawable/ic_image"
+                android:title="App With Settings" />
+            <item
+                android:id="@+id/room_words"
+                android:icon="@drawable/ic_image"
+                android:title="Room Words Sample" />
+        </menu>
+
+    </item>
+</menu>
