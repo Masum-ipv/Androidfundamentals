@@ -1,6 +1,8 @@
 # Android Developer Fundamentals
 Here I have implemented [Android Development Fundamentals Course](https://developer.android.com/courses/fundamentals-training/toc-v2#unit_1_get_started)
 
+![alt text](https://github.com/Masum-ipv/Androidfundamentals/blob/master/Capture.PNG?raw=true)
+
 Unit 1: Get started
 
 Lesson 1: Build your first app
